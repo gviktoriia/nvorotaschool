@@ -9,52 +9,68 @@
         0% {
           opacity: 1;
         }
-        20% {
+        25% {
           opacity: 0;
         }
-        40% {
+        50% {
           opacity: 1;
         }
-        /* Add more keyframes as needed */
+        75% {
+          opacity: 0;
+        }
       }
     </style>
   </head>
   <body>
     <div class="letters">
       <img class="lp" src="img/letterp.png" alt="Letter P" width="81.5px" height="61.5px">
-      <img class="lp" src="img/lettero.png" alt="Letter P" width="58px" height="84.5px">
-      <img class="lp" src="img/letterr.png" alt="Letter P" width="81.5px" height="92px">
-      <img class="lp" src="img/lettert.png" alt="Letter P" width="66.5px" height="86px">
-      <img class="lp" src="img/letterf.png" alt="Letter P" width="65.5px" height="87.5px">
-      <img class="lp" src="img/lettero.png" alt="Letter P" width="58px" height="84.5px">
-      <img class="lp" src="img/letterl.png" alt="Letter P" width="64.5px" height="93px">
-      <img class="lp" src="img/letteri.png" alt="Letter P" width="41.5px" height="90px">
-      <img class="lp" src="img/lettero.png" alt="Letter P" width="58px" height="84.5px">
+      <img class="lp" src="img/lettero.png" alt="Letter O" width="58px" height="84.5px">
+      <img class="lp" src="img/letterr.png" alt="Letter R" width="81.5px" height="92px">
+      <img class="lp" src="img/lettert.png" alt="Letter T" width="66.5px" height="86px">
+      <img class="lp" src="img/letterf.png" alt="Letter F" width="65.5px" height="87.5px">
+      <img class="lp" src="img/lettero.png" alt="Letter O" width="58px" height="84.5px">
+      <img class="lp" src="img/letterl.png" alt="Letter L" width="64.5px" height="93px">
+      <img class="lp" src="img/letteri.png" alt="Letter I" width="41.5px" height="90px">
+      <img class="lp" src="img/lettero.png" alt="Letter O" width="58px" height="84.5px">
+    </div>
+    <div class="text">
+      <span class="lp-text">letterp2.png</span>
+      <span class="lp-text">lettero2.png</span>
+      <span class="lp-text">letterr2.png</span>
+      <span class="lp-text">lettert2.png</span>
+      <span class="lp-text">letterf2.png</span>
+      <span class="lp-text">lettero2.png</span>
+      <span class="lp-text">letterl2.png</span>
+      <span class="lp-text">letteri2.png</span>
+      <span class="lp-text">lettero2.png</span>
     </div>
     <script>
-      const images = [
-        "letterp2.png",
-        "lettero2.png",
-        "letterr2.png",
-        // Add more image file names as needed
-      ];
-
       const lpImages = document.querySelectorAll(".lp");
+      const lpTexts = document.querySelectorAll(".lp-text");
       let currentImageIndex = 0;
 
       function changeImage() {
-        lpImages.forEach((image, index) => {
+        lpImages.forEach((image) => {
           image.style.animation = "none"; // Reset animation
-          setTimeout(() => {
-            image.src = "img/" + images[currentImageIndex];
-            image.style.animation = "changeImage 2s linear"; // Change image with animation
-          }, index * 200); // Delay each image change
         });
 
-        currentImageIndex = (currentImageIndex + 1) % images.length;
+        setTimeout(() => {
+          lpImages[currentImageIndex].src = "img/letterp2.png";
+          lpImages[currentImageIndex].style.animation = "changeImage 4s linear";
+          lpTexts[currentImageIndex].style.display = "inline"; // Display corresponding text
+          currentImageIndex++;
+
+          if (currentImageIndex === lpImages.length) {
+            currentImageIndex = 0;
+            lpTexts.forEach((text) => {
+              text.style.display = "none"; // Hide all text elements
+            });
+          }
+        }, 1000); // Delay before changing to the next image
       }
 
-      setInterval(changeImage, 5000); // Change the image every 5 seconds
+      // Change the image and text every 6 seconds
+      setInterval(changeImage, 6000);
     </script>
   </body>
 </html>
