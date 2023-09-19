@@ -1,11 +1,12 @@
 body {
     background-color: #222222;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
 }
 
 .letters {
     text-align: center;
 }
 
-.lp {
-    justify-content: center;
-}
