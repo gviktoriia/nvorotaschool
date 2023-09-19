@@ -4,22 +4,6 @@
     <meta charset="utf-8">
     <title>UI Designer</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-      @keyframes changeImage {
-        0% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
-        75% {
-          opacity: 0;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="letters">
@@ -33,44 +17,5 @@
       <img class="lp" src="img/letteri.png" alt="Letter I" width="41.5px" height="90px">
       <img class="lp" src="img/lettero.png" alt="Letter O" width="58px" height="84.5px">
     </div>
-    <div class="text">
-      <span class="lp-text">letterp2.png</span>
-      <span class="lp-text">lettero2.png</span>
-      <span class="lp-text">letterr2.png</span>
-      <span class="lp-text">lettert2.png</span>
-      <span class="lp-text">letterf2.png</span>
-      <span class="lp-text">lettero2.png</span>
-      <span class="lp-text">letterl2.png</span>
-      <span class="lp-text">letteri2.png</span>
-      <span class="lp-text">lettero2.png</span>
-    </div>
-    <script>
-      const lpImages = document.querySelectorAll(".lp");
-      const lpTexts = document.querySelectorAll(".lp-text");
-      let currentImageIndex = 0;
-
-      function changeImage() {
-        lpImages.forEach((image) => {
-          image.style.animation = "none"; // Reset animation
-        });
-
-        setTimeout(() => {
-          lpImages[currentImageIndex].src = "img/letterp2.png";
-          lpImages[currentImageIndex].style.animation = "changeImage 4s linear";
-          lpTexts[currentImageIndex].style.display = "inline"; // Display corresponding text
-          currentImageIndex++;
-
-          if (currentImageIndex === lpImages.length) {
-            currentImageIndex = 0;
-            lpTexts.forEach((text) => {
-              text.style.display = "none"; // Hide all text elements
-            });
-          }
-        }, 1000); // Delay before changing to the next image
-      }
-
-      // Change the image and text every 6 seconds
-      setInterval(changeImage, 6000);
-    </script>
   </body>
 </html>

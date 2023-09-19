@@ -10,3 +10,12 @@ body {
     text-align: center;
 }
 
+.lp {
+    transition: all 0.5s; /* Transition all CSS properties over 0.5 seconds */
+}
+
+.lp:hover {
+    /* Specify the new image source and any other desired styles on hover */
+    src: url("img/letterp2.png");
+    /* You can also add other styles like opacity, scale, etc. here */
+}
