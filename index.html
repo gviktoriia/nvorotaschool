@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <title>UI Designer</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      @keyframes changeImage {
+        0% {
+          opacity: 1;
+        }
+        20% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        /* Add more keyframes as needed */
+      }
+    </style>
   </head>
   <body>
     <div class="letters">
@@ -22,19 +36,25 @@
         "letterp2.png",
         "lettero2.png",
         "letterr2.png",
-        "lettert2.png",
-        "letterf2.png",
-        "lettero2.png",
-        "letterl2.png",
-        "letteri2.png",
-        "lettero2.png",
+        // Add more image file names as needed
       ];
 
       const lpImages = document.querySelectorAll(".lp");
+      let currentImageIndex = 0;
 
-      lpImages.forEach((image, index) => {
-        image.src = "img/" + images[index];
-      });
+      function changeImage() {
+        lpImages.forEach((image, index) => {
+          image.style.animation = "none"; // Reset animation
+          setTimeout(() => {
+            image.src = "img/" + images[currentImageIndex];
+            image.style.animation = "changeImage 2s linear"; // Change image with animation
+          }, index * 200); // Delay each image change
+        });
+
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+      }
+
+      setInterval(changeImage, 5000); // Change the image every 5 seconds
     </script>
   </body>
 </html>
