@@ -17,5 +17,24 @@
       <img class="lp" src="img/letteri.png" alt="Letter P" width="41.5px" height="90px">
       <img class="lp" src="img/lettero.png" alt="Letter P" width="58px" height="84.5px">
     </div>
+    <script>
+      const images = [
+        "letterp2.png",
+        "lettero2.png",
+        "letterr2.png",
+        "lettert2.png",
+        "letterf2.png",
+        "lettero2.png",
+        "letterl2.png",
+        "letteri2.png",
+        "lettero2.png",
+      ];
+
+      const lpImages = document.querySelectorAll(".lp");
+
+      lpImages.forEach((image, index) => {
+        image.src = "img/" + images[index];
+      });
+    </script>
   </body>
 </html>
