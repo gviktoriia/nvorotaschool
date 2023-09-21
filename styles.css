@@ -49,5 +49,5 @@ body {
 
 .flip {
     transform: rotateY(180deg);
-    transition: transform 0.5s;
+    transition: transform 0.3s;
   }
