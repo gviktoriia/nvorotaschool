@@ -18,6 +18,7 @@ body {
     transition: transform 0.1s;
 }
 
+/* Common style for all .card elements */
 .letters .card {
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -39,6 +40,7 @@ body {
 
 .back {
     transform: rotateY(180deg);
+    display: none;
 }
 
 /* Show the back side when .card is hovered */
