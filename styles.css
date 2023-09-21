@@ -40,7 +40,6 @@ body {
 
 .back {
     transform: rotateY(180deg);
-    display: none;
 }
 
 /* Show the back side when .card is hovered */
