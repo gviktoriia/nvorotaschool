@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Нижньоворітський ЗЗСО І-ІІІ Ступенів",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   keywords: ["Нижньоворітський ЗЗСО", "Нижні Ворота", "школа"],
   icons: { icon: "./Logo School 2.png" },
   alternates: {
-    canonical: "/",
+    canonical: "https://nvorota-school.pp.ua/",
   },
   openGraph: {
     url: "https://nvorota-school.pp.ua/",
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <GoogleAnalytics gaId="G-1GEYSSXF39" />
       <div className="max-w-5xl w-full items-center justify-center font-mono text-sm">
         <h1 className={`mb-3 text-2xl font-regular`}>
           Нижньоворітський ЗЗСО І-ІІІ ступенів
