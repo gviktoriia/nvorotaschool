@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,10 +34,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg-container {
+  @apply bg-cover bg-no-repeat;
+  background-image: url('/School photo_1.jpg');
+  width: 100%;
 }
 
 .loader {
