@@ -7,6 +7,22 @@ export const metadata: Metadata = {
     "Провідний заклад загальної середньої освіти в с. Нижні Ворота Нижньоворітської ОТГ Мукачівського району Закарпатської області.",
   keywords: ["Нижньоворітський ЗЗСО", "Нижні Ворота", "школа"],
   icons: { icon: "./Logo School 2.png" },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    url: "https://nvorota-school.pp.ua/",
+    siteName: "Нижньоворітський ЗЗСО І-ІІІ ступенів",
+    images: [
+      {
+        url: "./School photo_1.jpg",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "uk",
+    type: "website",
+  },
 };
 
 export default function Home() {
