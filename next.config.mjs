@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath: "/",
+  basePath: "/media",
 };
 
 export default nextConfig;
