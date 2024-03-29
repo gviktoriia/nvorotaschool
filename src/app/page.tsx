@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Нижньоворітський ЗЗСО І-ІІІ ступенів",
     images: [
       {
-        url: "./School photo_1.jpg",
+        url: "https://scontent.fiev8-2.fna.fbcdn.net/v/t39.30808-6/374655662_1350610312195703_632650169434485478_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CSKiHioUNjcAX-fDYzh&_nc_ht=scontent.fiev8-2.fna&oh=00_AfDOxJ5sC3OGWrQieic4PY8U9zkw-B0WOvaOHW28BakBPA&oe=660C53CA",
         width: 800,
         height: 600,
       },
