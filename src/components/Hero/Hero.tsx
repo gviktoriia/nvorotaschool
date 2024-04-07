@@ -1,7 +1,7 @@
+"use client";
 import Image from "next/image";
-import React from "react";
 
-const LandingPage = () => {
+const Hero = () => {
   return (
     <section
       className="max-container padding-container flex flex-col justify-center items-center z-0 top-0 absolute"
@@ -47,4 +47,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Hero;
