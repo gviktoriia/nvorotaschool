@@ -9,8 +9,8 @@ const Home = () => {
     <>
       <GoogleAnalytics gaId="G-1GEYSSXF39" />
       <Hero />
-      <Statistics />
-      <Gallery />
+      {/* <Statistics />
+      <Gallery /> */}
     </>
   );
 };
