@@ -6,14 +6,14 @@ const Features = () => {
       style={{
         fontSize: "24px",
         color: "#1a1b1f",
-        paddingTop: "80px",
-        paddingBottom: "80px",
       }}
     >
       <ul
         className="gap-y-30"
         style={{
           textDecoration: "none",
+          position: "sticky",
+          top: "50px",
         }}
       >
         <li style={{ marginBottom: "35px" }}>

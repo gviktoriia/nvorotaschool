@@ -7,10 +7,13 @@ const Gallery = () => {
       className="max-container padding-container flex flex-col justify-center items-center relative"
       style={{
         backgroundColor: "#f5f7fa",
+        paddingTop: "80px",
+        paddingBottom: "80px",
       }}
     >
-      <div className="flex row">
+      <div className="flex flex-col sm:flex-row gap-x-16">
         <Features />
+        <Carousel />
       </div>
     </section>
   );
