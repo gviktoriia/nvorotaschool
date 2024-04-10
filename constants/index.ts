@@ -1,6 +1,6 @@
 // NAVIGATION
 export const NAV_LINKS = [
-    { href: '/', key: 'administration', label: 'Структура управління' },
+    { href: '/administration', key: 'administration', label: 'Структура управління' },
     { href: '/', key: 'rules', label: 'Правила прийому' },
     { href: '/', key: 'services', label: 'Освітня програма' },
     { href: '/', key: 'about_us', label: 'Про заклад ' },
