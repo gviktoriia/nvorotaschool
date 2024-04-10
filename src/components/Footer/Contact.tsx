@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -23,12 +24,14 @@ const Contact = () => {
         </p>
       </div>
       <div>
-        <Image
-          src="/facebook_icon.svg"
-          width={20}
-          height={20}
-          alt="facebook група"
-        />
+        <a href="https://www.facebook.com/groups/599516861343445" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/facebook_icon.svg"
+            width={20}
+            height={20}
+            alt="facebook група"
+          />
+        </a>
       </div>
     </div>
   );
