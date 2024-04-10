@@ -3,10 +3,9 @@
 const Statistics = () => {
   return (
     <section
-      className="max-container padding-container flex flex-col justify-center items-center relative z-0 "
+      className="max-container padding-container flex flex-col justify-center items-center relative"
       style={{
         backgroundColor: "#141414",
-        marginTop: "86vh",
       }}
     >
       <div className="flex flex-wrap lg:flex-nowrap justify-center gap-x-32 gap-y-32 mt-16 mb-16 mr-5 ml-5">

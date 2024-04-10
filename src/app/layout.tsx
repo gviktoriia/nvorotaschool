@@ -39,7 +39,6 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <body className="bg-transparent">
-        <Navbar />
         <main>{children}</main>
         <Footer />
       </body>
