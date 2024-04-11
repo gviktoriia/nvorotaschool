@@ -5,11 +5,13 @@ import { NAV_LINKS } from "../../../utils/linksUtil";
 import { useState } from "react";
 
 const Navbar = () => {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
   return (
     <nav className="flexCenter max-container padding-container relative py-5 gap-20 z-50 bg-transparent border-y-white border-b-2">
       <Link href="/" className="ml-10">

@@ -13,7 +13,7 @@ const Home = () => {
       <Hero />
       <Statistics />
       <Gallery />
-      <Rules />
+      <Rules headText="Правила прийому до закладу" bgColor="#141414" textColor="white" />
       <WorkingHours />
     </>
   );

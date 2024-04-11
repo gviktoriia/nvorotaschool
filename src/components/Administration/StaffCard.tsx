@@ -25,7 +25,7 @@ const StaffCard: React.FC<StaffCardProps> = (props) => {
           src={props.image}
           width={260}
           height={350}
-          alt="Директор школи"
+          alt={props.title}
           style={{
             marginRight: "auto",
             marginLeft: "auto",
