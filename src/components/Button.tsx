@@ -1,18 +1,17 @@
 "use client";
 
 type ButtonProps = {
-  type: "button" | "submit";
   title: string;
-  variant: string;
+  function: () => void;
 };
 
-const Button = ({ type, title, variant }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = (props) => {
   return (
     <button
-      className={`flexCenter gap-3 rounded-full border ${variant}`}
-      type={type}
+      className="bg-black text-white rounded-full py-2 px-4 hover:bg-gray-800 pr-4 pl-4"
+      onClick={props.function}
     >
-      <label className="bold-20 whitespace-nowrap">{title}</label>
+      {props.title}
     </button>
   );
 };

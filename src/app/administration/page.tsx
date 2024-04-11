@@ -9,7 +9,10 @@ const page = () => {
     <section className="bg-black">
       <Navbar />
       <div className="bg-white">
-        <h2 className="text-center justify-center bold-20 pt-10 mb-10">
+        <h2 className="text-left regular-16 ml-16 pt-4">
+          * Вакантні місця наразі відсутні.
+        </h2>
+        <h2 className="text-center justify-center bold-20 pt-4 mb-10">
           Адміністрація закладу
         </h2>
         <div className="flex flex-col justify-center text-center md:flex-row ml-16 mr-16">
