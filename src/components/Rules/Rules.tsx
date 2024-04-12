@@ -11,16 +11,14 @@ interface RulesProps {
 const Rules: React.FC<RulesProps> = (props) => {
   return (
     <section
-      className="max-container padding-container flex flex-col justify-center items-center relative"
+      className="max-container padding-container flex flex-col justify-center items-center relative pt-6 pb-10"
       style={{
         backgroundColor: props.bgColor,
-        paddingTop: "80px",
-        paddingBottom: "80px",
       }}
     >
       <h2
         style={{
-          fontSize: "26px",
+          fontSize: "20px",
           color: props.textColor,
           fontWeight: "bold",
           textAlign: "center",
@@ -29,7 +27,7 @@ const Rules: React.FC<RulesProps> = (props) => {
         {props.headText}
       </h2>
       <div
-        className="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-50 mt-12"
+        className="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-50 mt-6"
         style={{
           width: "100%",
         }}

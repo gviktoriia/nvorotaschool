@@ -14,8 +14,8 @@ const Page = () => {
   return (
     <section className="bg-black">
       <Navbar />
-      <div className="bg-white pl-10 pr-10">
-        <h2 className="text-center justify-center bold-20 pt-10 mb-10">
+      <div className="bg-white pl-8 pr-8">
+        <h2 className="text-center justify-center bold-20 pt-6 mb-6">
           Освітня програма
         </h2>
         <p className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto mb-4">
@@ -23,10 +23,10 @@ const Page = () => {
           освіти та побачити перелік освітніх компонентів, визначених освітньою
           програмою.
         </p>
-        <div className="text-center justify-center pb-10">
+        <div className="text-center justify-center pb-6">
           <Button title="Ознайомитись" function={handleDownload} />
         </div>
-        <h2 className="text-center justify-center bold-18 mb-4">
+        <h2 className="text-center justify-center bold-20 mb-6">
           Структура робочого тижня
         </h2>
         <p className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto mb-4">
@@ -36,7 +36,7 @@ const Page = () => {
           Тривалість уроків встановлюється відповідно до Закону України
           &quot;Про загальну середню освіту&quot;:
         </p>
-        <ul className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto pb-4">
+        <ul className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto pb-8">
           <li>1 клас - 35 хвилин</li>
           <li>2 - 4 класи - 40 хвилин</li>
           <li>5 - 11 класи - 45 хвилин</li>

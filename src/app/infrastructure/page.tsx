@@ -38,8 +38,8 @@ const page = () => {
   return (
     <section className="bg-black">
       <Navbar />
-      <div className="bg-white p-10">
-        <h2 className="text-center justify-center bold-20 pt-10 mb-10">
+      <div className="bg-white pl-10 pr-10 pb-10">
+        <h2 className="text-center justify-center bold-20 pt-6 mb-6">
           Матеріально-технічне забезпечення
         </h2>
         <div>

@@ -22,7 +22,9 @@ const Features = () => {
         <li style={{ marginBottom: "35px" }}>Волонтерська діяльність</li>
         <li style={{ marginBottom: "35px" }}>Позакласні заходи</li>
         <li style={{ marginBottom: "35px" }}>Літній англомовний табір</li>
-        <li style={{ marginBottom: "35px" }}>Футбольна команда</li>
+        <li style={{ marginBottom: "35px", paddingBottom: "20px" }}>
+          Футбольна команда
+        </li>
       </ul>
     </div>
   );
