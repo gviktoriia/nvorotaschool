@@ -2,8 +2,18 @@
 
 import Button from "@/components/Button";
 import Navbar from "@/components/Hero/Navbar";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Page = () => {
+  const results = [
+    "books_result_01.jpg",
+    "books_result_02.jpg",
+    "books_result_03.jpg",
+    "books_result_04.jpg",
+  ];
+
   const handleDownload = () => {
     const anchor = document.createElement("a");
     anchor.href =
@@ -30,6 +40,30 @@ const Page = () => {
         <div className="text-center justify-center pb-6">
           <Button title="Ознайомитись" function={handleDownload} />
         </div>
+
+        <h2 className="text-center justify-center bold-20 pt-6 mb-6">
+          Результати вибору підручників
+        </h2>
+
+        <div className="flex flex-col text-white justify-center text-center lg:flex-row ml-16 mr-16 mb-12 gap-x-12 gap-y-12">
+          {results.map((result, index) => (
+            <Image
+              style={{
+                textAlign: "center",
+                justifyContent: "center",
+                display: "flex",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              key={index}
+              src={result}
+              alt="books"
+              width={220}
+              height={100}
+            />
+          ))}
+        </div>
+
         <h2 className="text-center justify-center bold-20 mb-6">
           Структура робочого тижня
         </h2>

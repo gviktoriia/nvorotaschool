@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 interface StaffCardProps {
-  image?: string;
   title: string;
   rank?: string;
   date?: number;
@@ -11,7 +10,7 @@ interface StaffCardProps {
 }
 
 const StaffCard: React.FC<StaffCardProps> = (props) => {
-  const imageUrl = props.image ? props.image : "/blue_avatar.jpg";
+  //const imageUrl = props.image ? props.image : "/blue_avatar.jpg";
   return (
     <div
       style={{
@@ -19,10 +18,14 @@ const StaffCard: React.FC<StaffCardProps> = (props) => {
         textAlign: "center",
         alignItems: "center",
         paddingBottom: "20px",
+        paddingLeft: "20px",
+        paddingRight: "20px",
+        backgroundColor: "#135D66",
+        borderRadius: "30px",
       }}
     >
       <div className="flex flex-col justify-center items-center">
-        <Image
+        {/* <Image
           src={imageUrl}
           width={260}
           height={350}
@@ -31,8 +34,10 @@ const StaffCard: React.FC<StaffCardProps> = (props) => {
             marginRight: "auto",
             marginLeft: "auto",
           }}
-        />
-        <h3 className="text-lg font-semibold mt-4 max-w-72">{props.title}</h3>
+        /> */}
+        <h3 className="text-lg font-semibold mt-4 max-w-72 underline">
+          {props.title}
+        </h3>
         <div className="mt-2">
           {props.rank && <p className="text-sm">{props.rank}</p>}
           {props.education && (
