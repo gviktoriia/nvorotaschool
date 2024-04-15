@@ -3,7 +3,6 @@
 import SchoolInfoCard from "@/components/AboutUs/SchoolInfoCard";
 import Button from "@/components/Button";
 import Navbar from "@/components/Hero/Navbar";
-import Image from "next/image";
 
 const page = () => {
   const handleDownload = () => {

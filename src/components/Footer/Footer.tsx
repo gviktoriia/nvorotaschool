@@ -1,4 +1,5 @@
 "use client";
+
 import FooterInfo from "./FooterInfo";
 
 const Footer = () => {

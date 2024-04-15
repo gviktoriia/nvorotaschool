@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Navbar from "./Navbar";
 
@@ -20,7 +21,7 @@ const Hero = () => {
         </h1>
         <div className="mt-32 mb-24">
           <div className="flex column">
-            <Image
+            <Image priority
               src="/location.png"
               width={40}
               height={40}
@@ -33,7 +34,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex column mt-5">
-            <Image
+            <Image priority
               src="/email.png"
               width={40}
               height={40}

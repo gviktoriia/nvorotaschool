@@ -1,5 +1,4 @@
 "use client";
-require("dotenv").config();
 
 import { GoogleMapsEmbed } from "@next/third-parties/google";
 

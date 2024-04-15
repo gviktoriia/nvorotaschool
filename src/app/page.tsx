@@ -1,4 +1,5 @@
 "use client";
+
 import Gallery from "@/components/Gallery/Gallery";
 import Hero from "@/components/Hero/Hero";
 import Rules from "@/components/Rules/Rules";
@@ -13,7 +14,11 @@ const Home = () => {
       <Hero />
       <Statistics />
       <Gallery />
-      <Rules headText="Правила прийому до закладу" bgColor="#141414" textColor="white" />
+      <Rules
+        headText="Правила прийому до закладу"
+        bgColor="#141414"
+        textColor="white"
+      />
       <WorkingHours bgColor="#f5f7fa" />
     </>
   );

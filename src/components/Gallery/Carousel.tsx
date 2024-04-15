@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
@@ -17,7 +19,7 @@ const Carousel = () => {
       }}
     >
       {images.map((imageUrl, index) => (
-        <Image
+        <Image priority
           key={index}
           src={imageUrl}
           width={500}

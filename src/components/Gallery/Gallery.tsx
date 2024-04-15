@@ -1,6 +1,8 @@
 "use client";
+
 import Carousel from "./Carousel";
 import Features from "./Features";
+
 const Gallery = () => {
   return (
     <section
