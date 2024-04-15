@@ -6,8 +6,12 @@ import Navbar from "@/components/Hero/Navbar";
 const Page = () => {
   const handleDownload = () => {
     const anchor = document.createElement("a");
-    anchor.href = "/41.docx";
-    anchor.download = "/41.docx";
+    anchor.href =
+      "/Освітня програма Нижньоворітського ЗЗСО.docx" &&
+      "Освітня програма 5-6 клас.docx";
+    anchor.download =
+      "/Освітня програма Нижньоворітського ЗЗСО.docx" &&
+      "Освітня програма 5-6 клас.docx";
     anchor.click();
   };
 

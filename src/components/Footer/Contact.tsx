@@ -20,11 +20,15 @@ const Contact = () => {
             fontSize: "12px",
           }}
         >
-          +38095*******
+          +380954885057
         </p>
       </div>
       <div>
-        <a href="https://www.facebook.com/groups/599516861343445" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com/groups/599516861343445"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src="/facebook_icon.svg"
             width={20}

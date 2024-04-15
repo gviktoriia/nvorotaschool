@@ -3,12 +3,16 @@ require("dotenv").config();
 
 import { GoogleMapsEmbed } from "@next/third-parties/google";
 
-const WorkingHours = () => {
+interface WorkingHoursProps {
+  bgColor: string;
+}
+
+const WorkingHours: React.FC<WorkingHoursProps> = (props) => {
   return (
     <section
       className="max-container padding-container flex flex-col justify-center items-center relative"
       style={{
-        backgroundColor: "#f5f7fa",
+        backgroundColor: props.bgColor,
         paddingTop: "80px",
         paddingBottom: "80px",
         width: "100%",

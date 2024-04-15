@@ -3,12 +3,13 @@
 import SchoolInfoCard from "@/components/AboutUs/SchoolInfoCard";
 import Button from "@/components/Button";
 import Navbar from "@/components/Hero/Navbar";
+import Image from "next/image";
 
 const page = () => {
   const handleDownload = () => {
     const anchor = document.createElement("a");
-    anchor.href = "/41.docx";
-    anchor.download = "/41.docx";
+    anchor.href = "/Статут-2021 (Відновлено).doc";
+    anchor.download = "/Статут-2021 (Відновлено).doc";
     anchor.click();
   };
 
@@ -34,7 +35,6 @@ const page = () => {
         <div className="text-center justify-center">
           <Button title="Статут НЗ" function={handleDownload} />
         </div>
-        <div></div>
       </div>
     </section>
   );

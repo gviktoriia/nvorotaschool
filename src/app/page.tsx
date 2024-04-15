@@ -14,7 +14,7 @@ const Home = () => {
       <Statistics />
       <Gallery />
       <Rules headText="Правила прийому до закладу" bgColor="#141414" textColor="white" />
-      <WorkingHours />
+      <WorkingHours bgColor="#f5f7fa" />
     </>
   );
 };
