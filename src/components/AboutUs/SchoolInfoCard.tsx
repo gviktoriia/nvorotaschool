@@ -9,7 +9,12 @@ const SchoolInfoCard = () => {
     "Мовою освітнього процесу в закладі освіти, згідно зі cтатутом школи є українська мова.",
   ];
   return (
-    <div className="max-w-4xl bg-gray-800 p-4 text-white rounded-lg mr-auto ml-auto">
+    <div
+      className="max-w-4xl p-4 text-white rounded-lg mr-auto ml-auto"
+      style={{
+        backgroundColor: "#135D66",
+      }}
+    >
       {paragraphs.map((text, index) => (
         <ParagraphText key={index} text={text} />
       ))}
