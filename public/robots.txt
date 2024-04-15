@@ -1,0 +1,3 @@
+User-agent: *
+Allow: https://nvorota-school.pp.ua/
+Sitemap: https://nvorota-school.pp.ua/sitemap.xml

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Hero/Navbar";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
+      <Head>
+        <meta name="robots" content="index, follow" />
+      </Head>
       <body className="bg-transparent">
         <main>{children}</main>
         <Footer />
