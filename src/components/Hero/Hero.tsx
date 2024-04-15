@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
         <div className="mt-32 mb-24">
           <div className="flex column">
-            <Image priority
+            <Image
               src="/location.png"
               width={40}
               height={40}
@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex column mt-5">
-            <Image priority
+            <Image
               src="/email.png"
               width={40}
               height={40}

@@ -19,7 +19,7 @@ const Carousel = () => {
       }}
     >
       {images.map((imageUrl, index) => (
-        <Image priority
+        <Image
           key={index}
           src={imageUrl}
           width={500}
