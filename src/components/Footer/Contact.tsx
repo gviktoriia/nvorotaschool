@@ -12,7 +12,7 @@ const Contact = () => {
             fontSize: "12px",
           }}
         >
-          nvorotascool@meta.ua
+          school-internat@ukr.net
         </p>
         <p
           style={{

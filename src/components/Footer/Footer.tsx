@@ -20,7 +20,7 @@ const Footer = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2024 Нижньоворітський ЗЗСО
+        Copyright © 2024 Нижньоворітський ліцей
       </p>
     </section>
   );

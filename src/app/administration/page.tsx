@@ -13,7 +13,7 @@ const page = () => {
           * Вакантні місця наразі відсутні.
         </h2>
         <h2 className="text-center justify-center bold-20 pt-4 mb-10">
-          Адміністрація закладу
+          Адміністрація ліцею
         </h2>
         <div className="flex flex-col text-white justify-center text-center md:flex-row ml-16 mr-16 gap-x-24 gap-y-16">
           {ADMINISTRATION.map((admin, index) => (

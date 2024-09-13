@@ -17,11 +17,11 @@ const page = () => {
       <Navbar />
       <div className="bg-white p-10">
         <h2 className="text-center justify-center bold-20 mb-6">
-          Про Нижньоворітський заклад загальної середньої освіти
+          Про Нижньоворітський ліцей
         </h2>
         <p className="text-center justify-center regular-18 max-w-4xl mr-auto ml-auto mb-6">
           Це провідний заклад середньої освіти в селі Нижні Ворота Мукачівського
-          району Закарпатської області. Нижньоворітський ЗЗСО І-ІІІ ступенів має
+          району Закарпатської області. Нижньоворітський ліцей має
           свою цікаву і самобутню історію. Зокрема, загальну середню освіту він
           розпочав надавати з 1950 року і працює дотепер.
         </p>
@@ -29,7 +29,7 @@ const page = () => {
           <SchoolInfoCard />
         </div>
         <p className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto mb-4">
-          Тут можна завантажити статут Нижньоворітського ЗЗСО.
+          Тут можна завантажити статут Нижньоворітського ліцею.
         </p>
         <div className="text-center justify-center">
           <Button title="Статут НЗ" function={handleDownload} />

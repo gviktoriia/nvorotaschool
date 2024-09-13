@@ -33,19 +33,19 @@ const Page = () => {
           Освітня програма
         </h2>
         <p className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto mb-4">
-          Тут можна ознайомитись із освітніми програмами, які втілюють у закладі
-          освіти та побачити перелік освітніх компонентів, визначених освітньою
+          Тут можна ознайомитись із освітніми програмами, які втілюють у ліцеї
+          та побачити перелік освітніх компонентів, визначених освітньою
           програмою.
         </p>
-        <div className="text-center justify-center pb-6">
+        {/* <div className="text-center justify-center pb-6">
           <Button title="Ознайомитись" function={handleDownload} />
-        </div>
+        </div> */}
 
-        <h2 className="text-center justify-center bold-20 pt-6 mb-6">
+        {/* <h2 className="text-center justify-center bold-20 pt-6 mb-6">
           Результати вибору підручників
-        </h2>
+        </h2> */}
 
-        <div className="flex flex-col text-white justify-center text-center lg:flex-row ml-16 mr-16 mb-12 gap-x-12 gap-y-12">
+        {/* <div className="flex flex-col text-white justify-center text-center lg:flex-row ml-16 mr-16 mb-12 gap-x-12 gap-y-12">
           {results.map((result, index) => (
             <Image
               style={{
@@ -62,7 +62,7 @@ const Page = () => {
               height={100}
             />
           ))}
-        </div>
+        </div> */}
 
         <h2 className="text-center justify-center bold-20 mb-6">
           Структура робочого тижня

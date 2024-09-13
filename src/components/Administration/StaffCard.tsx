@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 interface StaffCardProps {
   title: string;
   rank?: string;
@@ -44,7 +42,7 @@ const StaffCard: React.FC<StaffCardProps> = (props) => {
             <p className="text-sm">Освіта: {props.education}</p>
           )}
           {props.date && (
-            <p className="text-sm">У школі працює з {props.date} року.</p>
+            <p className="text-sm">У ліцеї працює з {props.date} року.</p>
           )}
         </div>
       </div>

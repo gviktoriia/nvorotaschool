@@ -32,7 +32,7 @@ const WorkingHours: React.FC<WorkingHoursProps> = (props) => {
         height={300}
         width="100%"
         mode="place"
-        q="Нижньоворітський ЗЗСО, Нижні Ворота, Закарпатська область, 89130"
+        q="48.76798967231205, 23.097213929550012"
       />
     </section>
   );

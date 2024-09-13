@@ -10,7 +10,7 @@ const page = () => {
       <Navbar />
       <div className="bg-white">
         <Rules
-          headText="Правила прийому до Нижньоворітського ЗЗСО"
+          headText="Правила прийому до Нижньоворітського ліцею"
           bgColor="white"
           textColor="black"
         />

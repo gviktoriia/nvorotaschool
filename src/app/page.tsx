@@ -15,7 +15,7 @@ const Home = () => {
       <Statistics />
       <Gallery />
       <Rules
-        headText="Правила прийому до закладу"
+        headText="Правила прийому до ліцею"
         bgColor="#141414"
         textColor="white"
       />
