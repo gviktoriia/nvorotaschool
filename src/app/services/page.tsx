@@ -72,7 +72,7 @@ const Page = () => {
         </p>
         <p className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto mb-4">
           Тривалість уроків встановлюється відповідно до Закону України
-          &quot;Про загальну середню освіту&quot;:
+          &quot;Про повну загальну середню освіту&quot;:
         </p>
         <ul className="text-center justify-center regular-18 max-w-xl mr-auto ml-auto pb-8">
           <li>1 клас - 35 хвилин</li>

@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
       <div>
         <a
-          href="https://www.facebook.com/groups/599516861343445"
+          href="https://www.facebook.com/share/YjxJqXeDKvw3iWMm/"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -25,7 +25,7 @@ const WorkingHours: React.FC<WorkingHoursProps> = (props) => {
           marginBottom: "20px",
         }}
       >
-        Час роботи: Пн-Пт 8:00-16:00
+        Час роботи: Пн-Пт 8:00-17:00
       </p>
       <GoogleMapsEmbed
         apiKey="AIzaSyBpQ_Xll2OqAvDzlY2KMX3muflnps7IEeY"
