@@ -2,8 +2,6 @@
 
 This project aims to create a modern and responsive website for the school in Nyzhni Vorota, showcasing various features and information using Next.js and Tailwind CSS.
 
-You may visit the site here https://nvorota-school.pp.ua/.
-
 ## Languages and Tools
 <div id="tools">
   <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" title="Next.js" alt="Next.js"/>&nbsp;
